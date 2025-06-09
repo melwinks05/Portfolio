@@ -59,3 +59,14 @@ button#theme-toggle {
   cursor: pointer;
   z-index: 1000;
 }
+section:hover {
+  background-color: rgba(0, 64, 128, 0.05); /* Light highlight */
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  color: #0080ff;
+  text-decoration: underline;
+}
