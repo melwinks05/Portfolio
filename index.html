@@ -2,35 +2,35 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
   <button id="theme-toggle">Toggle Dark Mode</button>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>B.Tech CSE Student | Cybersecurity Enthusiast</p>
+  <header class="hero">
+    <h1>Hello, I’m Your Name</h1>
+    <p>B.Tech CSE Student & Cybersecurity Enthusiast</p>
     <nav>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
-      <a href="resume.pdf" download>Download Resume</a>
+      <a href="resume.pdf" download>Resume</a>
     </nav>
   </header>
 
   <main>
-    <section id="projects">
+    <div class="card" id="projects">
       <h2>Projects</h2>
       <ul>
         <li><strong>Automatic Gas Sensor:</strong> Description of the project.</li>
         <li><strong>Solar Powered Plant Monitoring System:</strong> Description of the project.</li>
       </ul>
-    </section>
-  <div class="box">
-    <section id="skills">
+    </div>
+
+    <div class="card" id="skills">
       <h2>Skills</h2>
       <ul>
         <li>C</li>
@@ -40,23 +40,23 @@
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
-    </section>
-</div>
-    <section id="achievements">
+    </div>
+
+    <div class="card" id="achievements">
       <h2>Achievements</h2>
       <ul>
         <li>National level participation in sports</li>
       </ul>
-    </section>
+    </div>
 
-    <section id="contact">
+    <div class="card" id="contact">
       <h2>Contact</h2>
       <ul>
         <li>Email: your.email@example.com</li>
         <li>LinkedIn: <a href="#">your-linkedin</a></li>
         <li>GitHub: <a href="#">your-github</a></li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <script src="portfolio.js" defer></script>
