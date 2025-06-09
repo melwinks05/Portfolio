@@ -1,12 +1,12 @@
-/* Base Theme */
 :root {
   --bg: #ffffff;
   --text: #000000;
   --link: #004080;
   --highlight: rgba(0, 64, 128, 0.05);
+  --accent: #004080;
 }
 
-/* Dark Theme */
+/* Dark Mode Theme */
 [data-theme="dark"] {
   --bg: #0f172a;
   --text: #ffffff;
@@ -19,68 +19,87 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
-  padding: 20px;
+  padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
-header {
+/* Hero Section */
+.hero {
+  background: var(--accent);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  padding: 0 20px;
 }
-
-nav a {
-  margin: 0 10px;
-  color: var(--link);
-  text-decoration: none;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero nav a {
+  margin: 0 15px;
+  color: white;
   font-weight: bold;
+  text-decoration: none;
 }
-
-nav a:hover {
+.hero nav a:hover {
   text-decoration: underline;
 }
 
-/* Highlight list items on hover */
-section ul li {
+/* Button */
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background: var(--link);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0066cc;
+}
+
+/* Cards */
+.card {
+  background: var(--bg);
+  border: 1px solid var(--highlight);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.card:hover {
+  background: var(--highlight);
+  border-color: var(--link);
+}
+
+section ul, .card ul {
+  list-style: none;
+  padding: 0;
+}
+.card ul li {
   padding: 8px 12px;
   border-radius: 6px;
   transition: background-color 0.3s;
 }
-
-section ul li:hover {
+.card ul li:hover {
   background-color: var(--highlight);
-}
-
-/* Optional: style the sections */
-section {
-  margin-bottom: 30px;
-  padding: 10px;
-  border-radius: 8px;
 }
 
 a {
   color: var(--link);
 }
-
 a:hover {
-  text-decoration: underline;
   color: #1e90ff;
-}
-
-button {
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  background-color: var(--link);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0066cc;
-}
-.box{
-background-color:red;
-
-  
 }
