@@ -1,6 +1,5 @@
-const toggleBtn = document.getElementById('theme-toggle');
-toggleBtn.addEventListener('click', () => {
-  const html = document.documentElement;
-  const currentTheme = html.getAttribute('data-theme');
-  html.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", newTheme);
 });
