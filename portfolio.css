@@ -11,7 +11,7 @@
   --bg: #0f172a;
   --text: #ffffff;
   --link: #60a5fa;
-  --highlight: rgba(255, 255, 255, 0.05);
+  --highlight: rgba(255, 255, 255, 0.08);
 }
 
 body {
@@ -39,15 +39,22 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Highlight list items on hover */
+section ul li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+section ul li:hover {
+  background-color: var(--highlight);
+}
+
+/* Optional: style the sections */
 section {
   margin-bottom: 30px;
   padding: 10px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-section:hover {
-  background-color: var(--highlight);
 }
 
 a {
